@@ -1,0 +1,93 @@
+{
+  "version": "1.0.0",
+  "app_name": "المساعد الصوتي آدم",
+  "description": "مساعد ذكي بالذكاء الاصطناعي يتحدث العربية",
+
+  "audio_settings": {
+    "mic_index": 0,
+    "trigger_word": "ادم",
+    "conversation_timeout": 30,
+    "voice": "ar-IQ-BasselNeural",
+    "energy_threshold": 300,
+    "dynamic_energy_threshold": true,
+    "pause_threshold": 0.8
+  },
+
+  "pygame_config": {
+    "frequency": 22050,
+    "size": -16,
+    "channels": 2,
+    "buffer": 512,
+    "timeout": 30
+  },
+
+  "ai_model": {
+    "model_name": "command-r7b-arabic",
+    "reasoning": false,
+    "temperature": 0.7,
+    "max_tokens": 1000
+  },
+
+  "directories": {
+    "music_directories": [
+      "~/Music",
+      "~/Downloads",
+      "~/Desktop",
+      "C:/Users/Public/Music",
+      "D:/Music",
+      "E:/Music"
+    ],
+    "audio_files": "audio_files",
+    "temp_audio": "temp_audio",
+    "logs": "logs",
+    "downloads": "downloads",
+    "user_data": "user_data"
+  },
+
+  "system_controls": {
+    "allow_shutdown": true,
+    "allow_restart": true,
+    "allow_file_operations": true,
+    "allow_internet_access": true,
+    "allow_system_info": true,
+    "allow_process_control": true,
+    "max_search_results": 5,
+    "max_file_results": 20
+  },
+
+  "web_search": {
+    "default_language": "ar",
+    "max_results": 5,
+    "timeout": 10,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  },
+
+  "logging": {
+    "level": "INFO",
+    "max_history_entries": 1000,
+    "save_conversations": true,
+    "log_system_events": true
+  },
+
+  "performance": {
+    "max_audio_duration": 30,
+    "cleanup_temp_files": true,
+    "memory_optimization": true
+  },
+
+  "languages": {
+    "primary": "ar",
+    "fallback": "en",
+    "supported_voices": [
+      "ar-IQ-BasselNeural",
+      "ar-SA-HamedNeural",
+      "ar-EG-SalmaNeural"
+    ]
+  },
+
+  "security": {
+    "safe_mode": true,
+    "restrict_sensitive_operations": false,
+    "log_security_events": true
+  }
+}
